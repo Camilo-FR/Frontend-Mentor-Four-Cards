@@ -94,7 +94,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   background-color: hsl(0, 0%, 98%);
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /**************/
@@ -224,12 +224,13 @@ section p {
     max-width: 1024px;
     margin: 0 auto;
   }
+  .supervisor {
+    margin-top: 4rem;
+  }
+
   .calculator,
-  .supervisor,
-  .team-builder,
-  .karma {
-    margin: 0;
-    padding: 0;
+  .supervisor {
+    transform: unset;
   }
   .top {
     text-align: center;
@@ -240,10 +241,11 @@ section p {
   }
   .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: unset;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto;
-    gap: 12rem;
+    gap: 6rem;
   }
 }
 
@@ -255,22 +257,25 @@ section p {
   body {
     max-width: 400px;
   }
-  .calculator,
-  .supervisor,
-  .team-builder,
-  .karma {
-    margin: 0;
-    padding: 0;
+  .supervisor {
+    margin-top: 4rem;
   }
+
+  .calculator,
+  .supervisor {
+    transform: unset;
+  }
+
   h1,
   h2 {
     line-height: 2rem;
   }
   .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: unset;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto;
-    gap: 12rem;
+    gap: 8rem;
   }
 }
