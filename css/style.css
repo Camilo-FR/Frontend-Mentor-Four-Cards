@@ -1,0 +1,276 @@
+/*************/
+/*** RESET ***/
+/*************/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/**************/
+/****GLOBAL****/
+/*************/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 98%);
+  height: 100vh;
+}
+
+/**************/
+/*****TOP*****/
+/*************/
+
+.top {
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: center;
+  line-height: 1.6rem;
+}
+
+h1 {
+  font-size: 2.3rem;
+  font-weight: lighter;
+  line-height: 1.2rem;
+  color: hsl(234, 12%, 34%);
+}
+h2 {
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+header .top p {
+  font-size: 1rem;
+  color: hsl(229, 6%, 66%);
+}
+
+/*******************/
+/****Four Cards****/
+/******************/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.calculator,
+.supervisor {
+  transform: translateY(50%);
+}
+
+section p {
+  color: hsl(229, 6%, 66%);
+}
+
+.team-builder {
+  background-color: #fff;
+  border: solid 1px white;
+  border-radius: 5px;
+  width: 21.9rem;
+  height: 15.6rem;
+  margin-bottom: 2rem;
+  border-top: solid 4px hsl(0, 78%, 62%);
+  padding: 2rem;
+  box-shadow: 0px 10px 15px hsl(229, 6%, 66%);
+  margin: 1rem 1rem;
+}
+
+.logo-team {
+  margin-top: 5rem;
+  margin-left: 17rem;
+}
+
+.karma {
+  background-color: #fff;
+  border: solid 1px white;
+  border-radius: 5px;
+  width: 21.9rem;
+  height: 15.6rem;
+  margin-bottom: 2rem;
+  border-top: solid 4px hsl(34, 97%, 64%);
+  padding: 2rem;
+  box-shadow: 0px 10px 15px hsl(229, 6%, 66%);
+  margin: 1rem 1rem;
+}
+
+.logo-karma {
+  margin-top: 5rem;
+  margin-left: 17rem;
+}
+
+.supervisor {
+  background-color: #fff;
+  border: solid 1px white;
+  border-radius: 5px;
+  width: 21.9rem;
+  height: 15.6rem;
+  margin-bottom: 2rem;
+  border-top: solid 4px hsl(180, 62%, 55%);
+  padding: 2rem;
+  box-shadow: 0px 10px 15px hsl(229, 6%, 66%);
+  margin: 1rem 1rem;
+}
+
+.logo-supervisor {
+  margin-top: 5rem;
+  margin-left: 17rem;
+}
+
+.calculator {
+  background-color: #fff;
+  border: solid 1px white;
+  border-radius: 5px;
+  width: 21.9rem;
+  height: 15.6rem;
+  margin-bottom: 2rem;
+  border-top: solid 4px hsl(212, 86%, 64%);
+  padding: 2rem;
+  box-shadow: 0px 10px 15px hsl(229, 6%, 66%);
+  margin: 1rem 1rem;
+}
+
+.logo-calculator {
+  margin-top: 5rem;
+  margin-left: 17rem;
+}
+
+/**********************************/
+/****RESPONSIVE TABLETTE-LAPTOP****/
+/**********************************/
+
+@media screen and (max-width: 1024px) {
+  body {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .calculator,
+  .supervisor,
+  .team-builder,
+  .karma {
+    margin: 0;
+    padding: 0;
+  }
+  .top {
+    text-align: center;
+  }
+  h1,
+  h2 {
+    line-height: 2rem;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 12rem;
+  }
+}
+
+/*************************/
+/****RESPONSIVE MOBILE****/
+/*************************/
+
+@media screen and (max-width: 400px) {
+  body {
+    max-width: 400px;
+  }
+  .calculator,
+  .supervisor,
+  .team-builder,
+  .karma {
+    margin: 0;
+    padding: 0;
+  }
+  h1,
+  h2 {
+    line-height: 2rem;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 12rem;
+  }
+}
