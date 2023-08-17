@@ -44,6 +44,8 @@ dd,
 ol,
 ul,
 li,
+h1,
+h2,
 fieldset,
 form,
 label,
@@ -97,6 +99,14 @@ body {
   min-height: 100vh;
 }
 
+header {
+  height: 10%;
+}
+
+section {
+  height: 90%;
+}
+
 /**************/
 /*****TOP*****/
 /*************/
@@ -106,6 +116,7 @@ body {
   max-width: 500px;
   text-align: center;
   line-height: 1.6rem;
+  padding-top: 1.5rem;
 }
 
 h1 {
@@ -113,10 +124,12 @@ h1 {
   font-weight: lighter;
   line-height: 1.2rem;
   color: hsl(234, 12%, 34%);
+  margin: 1.3rem 0;
 }
 h2 {
   font-size: 2.3rem;
   font-weight: 600;
+  margin: 1.3rem 0;
 }
 header .top p {
   font-size: 1rem;
@@ -147,8 +160,8 @@ section p {
   background-color: #fff;
   border: solid 1px white;
   border-radius: 5px;
-  width: 21.9rem;
-  height: 15.6rem;
+  width: 20rem;
+  height: 11.6rem;
   margin-bottom: 2rem;
   border-top: solid 4px hsl(0, 78%, 62%);
   padding: 2rem;
@@ -157,7 +170,7 @@ section p {
 }
 
 .logo-team {
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-left: 17rem;
 }
 
@@ -165,8 +178,8 @@ section p {
   background-color: #fff;
   border: solid 1px white;
   border-radius: 5px;
-  width: 21.9rem;
-  height: 15.6rem;
+  width: 20rem;
+  height: 11.6rem;
   margin-bottom: 2rem;
   border-top: solid 4px hsl(34, 97%, 64%);
   padding: 2rem;
@@ -175,7 +188,7 @@ section p {
 }
 
 .logo-karma {
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-left: 17rem;
 }
 
@@ -183,8 +196,8 @@ section p {
   background-color: #fff;
   border: solid 1px white;
   border-radius: 5px;
-  width: 21.9rem;
-  height: 15.6rem;
+  width: 20rem;
+  height: 11.6rem;
   margin-bottom: 2rem;
   border-top: solid 4px hsl(180, 62%, 55%);
   padding: 2rem;
@@ -193,7 +206,7 @@ section p {
 }
 
 .logo-supervisor {
-  margin-top: 5rem;
+  margin-top: 4rem;
   margin-left: 17rem;
 }
 
@@ -201,8 +214,8 @@ section p {
   background-color: #fff;
   border: solid 1px white;
   border-radius: 5px;
-  width: 21.9rem;
-  height: 15.6rem;
+  width: 20rem;
+  height: 11.6rem;
   margin-bottom: 2rem;
   border-top: solid 4px hsl(212, 86%, 64%);
   padding: 2rem;
@@ -211,7 +224,7 @@ section p {
 }
 
 .logo-calculator {
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-left: 17rem;
 }
 
@@ -253,9 +266,9 @@ section p {
 /****RESPONSIVE MOBILE****/
 /*************************/
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   body {
-    max-width: 400px;
+    max-width: 450px;
   }
   .supervisor {
     margin-top: 4rem;
@@ -277,5 +290,32 @@ section p {
     align-items: center;
     margin: 0 auto;
     gap: 8rem;
+  }
+
+  .supervisor,
+  .calculator,
+  .karma,
+  .team-builder {
+    width: 18rem;
+    margin: 0 auto;
+  }
+
+  .supervisor {
+    margin-top: 2rem;
+  }
+
+  .karma {
+    margin-bottom: 2rem;
+  }
+
+  .logo-team,
+  .logo-calculator,
+  .logo-karma,
+  .logo-supervisor {
+    margin-left: 15rem;
+  }
+
+  .logo-supervisor {
+    margin-top: 3rem;
   }
 }
